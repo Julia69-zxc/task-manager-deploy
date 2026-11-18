@@ -1,0 +1,12 @@
+:root{font-family:Inter,Segoe UI,Arial,sans-serif;color:#e9edf7;background:#0b1020}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:28px;
+background:radial-gradient(circle at 15% 10%,#26345d 0,transparent 34%),radial-gradient(circle at 90% 85%,#26305a 0,transparent 30%),#0b1020}
+.app{width:min(720px,100%);background:#141c31;border:1px solid #293654;border-radius:24px;padding:36px;box-shadow:0 24px 80px #0008}
+.eyebrow{font-size:11px;letter-spacing:3px;color:#8fa9e8;font-weight:700}h1{font-size:42px;margin:12px 0 6px}header p{color:#aab5ca;margin:0 0 28px}
+form{display:flex;gap:10px}input{flex:1;min-width:0;background:#0d1426;border:1px solid #344363;border-radius:12px;padding:15px;color:white;font-size:15px}
+button{border:0;border-radius:12px;padding:0 20px;background:#7898ff;color:#10182c;font-weight:700;cursor:pointer}button:hover{filter:brightness(1.1)}
+.toolbar{display:flex;justify-content:space-between;align-items:center;color:#9ba9c4;font-size:13px;margin:24px 0 12px}.quiet{background:transparent;color:#aebdf0;padding:8px}
+ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}li{display:flex;align-items:center;gap:12px;padding:14px;background:#0e1629;border:1px solid #263451;border-radius:12px}
+li span{flex:1;overflow-wrap:anywhere}.done span{text-decoration:line-through;color:#77839c}.check,.delete{background:transparent;color:#c5d1ef;padding:6px 10px}.delete{color:#ff9d9d}
+#message{min-height:22px;color:#ffb6a8;font-size:13px}footer{border-top:1px solid #293654;padding-top:18px;color:#7583a0;font-size:12px;margin-top:20px}
+@media(max-width:560px){.app{padding:24px}h1{font-size:34px}form{flex-direction:column}button{padding:14px}}

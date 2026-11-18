@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task Manager — список задач</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="app">
+    <header><div class="eyebrow">ЛИЧНАЯ ПРОДУКТИВНОСТЬ</div><h1>Мои задачи</h1>
+      <p>Небольшой менеджер задач, развёрнутый в Docker.</p></header>
+    <form id="task-form">
+      <input id="task-title" maxlength="120" placeholder="Например, подготовить практическую работу…" required>
+      <button type="submit">Добавить</button>
+    </form>
+    <div class="toolbar"><span id="counter">Загрузка…</span><button id="refresh" class="quiet" type="button">Обновить</button></div>
+    <ul id="tasks" aria-live="polite"></ul>
+    <p id="message" role="status"></p>
+    <footer>Task Manager · локальный учебный проект · HTTPS</footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
